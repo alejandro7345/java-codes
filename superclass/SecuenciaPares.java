@@ -28,6 +28,8 @@ public class SecuenciaPares {
         
         int dato1= entrada.nextInt();
         
+       
+        
 
         int [] arreglo =new int[dato1];
 
