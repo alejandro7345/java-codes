@@ -4,8 +4,8 @@ public class EmpleadoPorHoras extends Empleado{
     private double horas;
 
     public EmpleadoPorHoras(String primerNombre, String apellidoPaterno,
-String numeroSeguroSocial, double sueldo, double horas)
-{ super(primerNombre, apellidoPaterno, numeroSeguroSocial);
+String numeroSeguroSocial, double sueldo, double horas,Fecha fechaNacimiento)
+{ super(primerNombre, apellidoPaterno, numeroSeguroSocial,fechaNacimiento);
 
     if (sueldo < 0.0) // valida sueldo
  throw new IllegalArgumentException(

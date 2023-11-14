@@ -4,9 +4,9 @@ public class EmpleadoAsalariado  extends Empleado{
     
      // constructor
      public EmpleadoAsalariado(String primerNombre, String apellidoPaterno,
-      String numeroSeguroSocial, double salarioSemanal)
+      String numeroSeguroSocial, double salarioSemanal,Fecha fechaNacimiento)
       {
-    super(primerNombre, apellidoPaterno, numeroSeguroSocial);
+    super(primerNombre, apellidoPaterno, numeroSeguroSocial,fechaNacimiento);
    
    if (salarioSemanal < 0.0)
     throw new IllegalArgumentException(

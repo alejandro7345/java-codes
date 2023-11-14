@@ -5,10 +5,10 @@ public class EmpleadoBaseMasComision extends EmpleadoPorComision{
  // constructor
  public EmpleadoBaseMasComision(String primerNombre, String apellidoPaterno,
  String numeroSeguroSocial, double ventasBrutas,
- double tarifaComision, double salarioBase)
+ double tarifaComision, double salarioBase,Fecha fechaNacimiento)
  {
  super(primerNombre, apellidoPaterno, numeroSeguroSocial,
- ventasBrutas, tarifaComision);
+ ventasBrutas, tarifaComision,fechaNacimiento);
 
  if (salarioBase < 0.0) // valida el salarioBase
  throw new IllegalArgumentException("El salario base debe ser >= 0.0");

@@ -8,9 +8,9 @@
   // constructor 
  public EmpleadoPorComision(String primerNombre, String apellidoPaterno,
  String numeroSeguroSocial, double ventas,
- double tarifaComision)
+ double tarifaComision,Fecha fechaNacimiento)
  {
- super(primerNombre, apellidoPaterno, numeroSeguroSocial);
+ super(primerNombre, apellidoPaterno, numeroSeguroSocial,fechaNacimiento);
 
  if (tarifaComision <= 0.0 || tarifaComision >= 1.0) // valida
     throw new IllegalArgumentException(
